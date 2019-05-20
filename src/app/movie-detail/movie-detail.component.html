@@ -1,0 +1,8 @@
+<div class="detail">
+  <p>Overview: {{ movie.overview }}</p>
+  <p>
+    <button (click)="choose()">
+      <span [innerHTML]="movie.active ? 'Deactivate' : 'Activate'"></span>
+    </button>
+  </p>
+</div>
